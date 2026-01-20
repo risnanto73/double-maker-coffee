@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* Aesthetic base */
+:root {
+  color-scheme: dark;
+}
+
+::selection {
+  background: color-mix(in oklab, white 25%, transparent);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    "Apple Color Emoji",
+    "Segoe UI Emoji";
+}
+
+/* Subtle grain overlay utility (optional) */
+.grain {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    color-mix(in oklab, white 10%, transparent) 1px,
+    transparent 0
+  );
+  background-size: 18px 18px;
+  opacity: 0.25;
+  pointer-events: none;
+}

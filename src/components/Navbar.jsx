@@ -3,6 +3,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import Container from "./Container.jsx";
 import Button from "./Button.jsx";
 import { site } from "../data/siteData.js";
+import ThemeToggle from "./ThemeToggle.jsx";
 
 function NavItem({ to, children }) {
     return (
@@ -62,6 +63,7 @@ export default function Navbar() {
                         <Button as={NavLink} to="/menu" className="rounded-2xl">
                             Explore Menu
                         </Button>
+                        <ThemeToggle />
                     </div>
 
                     <button
@@ -91,6 +93,7 @@ export default function Navbar() {
                                 <Button as={NavLink} to="/menu" className="flex-1">
                                     Menu
                                 </Button>
+                                <ThemeToggle className="w-full" />
                             </div>
                         </div>
                     </div>

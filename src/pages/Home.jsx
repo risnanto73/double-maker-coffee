@@ -165,6 +165,66 @@ export default function Home() {
                 </div>
             </Container>
 
+            {/* MAPS */}
+            {/* Maps / Location */}
+            <Container className="pb-16">
+                <SectionTitle
+                    eyebrow="Visit"
+                    title="Find us on the map"
+                    desc="126 Margaret St, Brisbane City QLD 4000"
+                />
+
+                <div className="grid gap-4 lg:grid-cols-2">
+                    <div className="rounded-3xl overflow-hidden ring-1 ring-black/10 bg-white dark:bg-white/5 dark:ring-white/10">
+                        <div className="aspect-[4/3]">
+                            <iframe
+                                title="Double Maker Coffee - Map"
+                                className="h-full w-full"
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                src={
+                                    "https://www.google.com/maps?q=" +
+                                    encodeURIComponent("Double Maker Coffee, 126 Margaret St, Brisbane City QLD 4000") +
+                                    "&output=embed"
+                                }
+                            />
+                        </div>
+                    </div>
+
+                    <div className="rounded-3xl ring-1 ring-black/10 bg-white p-6 dark:bg-white/5 dark:ring-white/10">
+                        <div className="text-lg font-semibold text-zinc-900 dark:text-white">
+                            Double Maker Coffee
+                        </div>
+                        <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">
+                            {`126 Margaret St, Brisbane City QLD 4000`}
+                        </p>
+
+                        <div className="mt-4 flex flex-wrap gap-2">
+                            <a
+                                className="rounded-2xl bg-zinc-900 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-800 dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-200"
+                                href="https://maps.app.goo.gl/3qumJ8NtSXiW4sgm7"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Open in Google Maps
+                            </a>
+
+                            <a
+                                className="rounded-2xl bg-black/5 px-4 py-2 text-sm ring-1 ring-black/10 hover:bg-black/8 dark:bg-white/5 dark:ring-white/10 dark:hover:bg-white/10"
+                                href="tel:493311253"
+                            >
+                                Call 493311253
+                            </a>
+                        </div>
+
+                        <div className="mt-6 rounded-2xl bg-black/5 p-4 text-sm text-zinc-700 ring-1 ring-black/10 dark:bg-white/5 dark:text-zinc-300 dark:ring-white/10">
+                            Tip: nanti section ini bisa diambil dari CMS (alamat, link maps, jam buka).
+                        </div>
+                    </div>
+                </div>
+            </Container>
+
+
             <Toast show={toast.show} message={toast.message} />
         </main>
     );

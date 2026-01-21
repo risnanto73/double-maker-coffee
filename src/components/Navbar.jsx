@@ -12,7 +12,10 @@ function NavItem({ to, children }) {
             className={({ isActive }) =>
                 [
                     "rounded-xl px-3 py-2 text-sm transition",
-                    isActive ? "bg-white/10 text-white" : "text-zinc-300 hover:bg-white/8 hover:text-white"
+                    isActive
+                        ? "bg-black/8 text-zinc-950 dark:bg-white/10 dark:text-white"
+                        : "text-zinc-600 hover:bg-black/6 hover:text-zinc-950 dark:text-zinc-300 dark:hover:bg-white/8 dark:hover:text-white"
+
                 ].join(" ")
             }
         >

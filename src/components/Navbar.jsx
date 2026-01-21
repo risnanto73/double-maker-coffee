@@ -28,7 +28,7 @@ export default function Navbar() {
     React.useEffect(() => setOpen(false), [loc.pathname]);
 
     return (
-        <div className="sticky top-0 z-40 border-b border-white/8 bg-zinc-950/75 backdrop-blur">
+        <div className="sticky top-0 z-40 border-b border-black/8 bg-white/70 backdrop-blur dark:border-white/8 dark:bg-zinc-950/75">
             <Container className="py-3">
                 <div className="flex items-center justify-between gap-3">
                     <NavLink to="/" className="group flex items-center gap-3">

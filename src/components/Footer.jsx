@@ -3,7 +3,7 @@ import { site } from "../data/siteData.js";
 
 export default function Footer() {
     return (
-        <footer className="border-t border-white/8 bg-zinc-950">
+        <footer className="border-t border-black/8 bg-zinc-50 dark:border-white/8 dark:bg-zinc-950">
             <Container className="py-10">
                 <div className="grid gap-8 md:grid-cols-3">
                     <div>

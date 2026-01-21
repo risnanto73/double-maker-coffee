@@ -165,7 +165,6 @@ export default function Home() {
                 </div>
             </Container>
 
-            {/* MAPS */}
             {/* Maps / Location */}
             <Container className="pb-16">
                 <SectionTitle

@@ -2,6 +2,11 @@
 
 /* Aesthetic base */
 :root {
+  color-scheme: light;
+}
+
+/* saat ThemeProvider nambah class "dark" ke <html> */
+html.dark {
   color-scheme: dark;
 }
 

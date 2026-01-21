@@ -8,9 +8,9 @@ import { NavLink } from "react-router-dom";
 
 function Stat({ label, value }) {
     return (
-        <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 p-5">
-            <div className="text-2xl font-semibold text-white">{value}</div>
-            <div className="mt-1 text-sm text-zinc-400">{label}</div>
+        <div className="rounded-3xl bg-black/5 ring-1 ring-black/10 p-5 dark:bg-white/5 dark:ring-white/10">
+            <div className="text-2xl font-semibold text-zinc-900 dark:text-white">{value}</div>
+            <div className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">{label}</div>
         </div>
     );
 }
